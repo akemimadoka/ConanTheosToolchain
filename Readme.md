@@ -9,13 +9,14 @@ ConanTheosToolchain
 ----
 
 ```bash
+conan export .
 conan config install -tf profiles theos.profile
 ```
 
 使用
 ----
 
-假定正在使用 conanfile.txt 描述依赖，并使用 build 文件夹放置生成的文件
+假定正在使用 conanfile.txt 描述依赖，且使用 make 生成器，并使用 build 文件夹放置生成的文件
 
 ```bash
 conan install conanfile.txt -pr theos.profile -if build --build missing
